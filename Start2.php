@@ -1,5 +1,7 @@
 <?php 
 session_start();
+$_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3']; 
+ 
 ?>
 
 
@@ -15,19 +17,23 @@ session_start();
 <body>
 	<div class="container">
 		<div id="quiz">
-		<form action="Start2.php" method="post" id="quiz">
-
-			<h1>Online/Offline</h1>
+			<h1>	<?php
+			if (isset($_POST['test'])){
+				echo $_SESSION['score'];
+			}		
+			?>
+			</h1>
+		
 			<div class="question">
 				<h3>1. Forestill deg at du har en god venn på internett som vil møte deg i virkeligheten. Han/hun maser veldig mye
 					på deg slik at du skal møte vedkommende. Hva hadde du gjort i dette tilfellet?</h3>
-				<label><input type="radio" id="q11" name="question1" value="1">Siden vi er
+				<label><input type="radio" id="q11" name="question1" value="Siden vi er gode venner, ville jeg si ja.">Siden vi er
 					gode venner, ville jeg si ja.</label>
 				<Br>
-				<input type="radio" id="q12" name="question1" value="2">Jeg
+				<input type="radio" id="q12" name="question1" value="1">Jeg
 				ville sagt nei til den personen siden man kan ikke stole på alle på internett.
 				<BR>
-				<input type="radio" id="q13" name="question1" value="3">Jeg ville sagt
+				<input type="radio" id="q13" name="question1" value="2">Jeg ville sagt
 				je, men tatt med meg en voksen.
 
 				<h3>2. Du har kjent en person i flere måneder nå, denne personen spør om å få se bildet av deg. Denne personen er
@@ -47,8 +53,11 @@ session_start();
 				<input type="radio" id="q32" name="question3" value="2">Nei,
 				barn burde ikke bli fristet av dyrt elektronisk innhold, som ikke har noen virkelig verdi.
 			</div>
-			<input type="submit" id="submit" name="test" value="submit">
-			</form>
+
+			<div id="button">
+				<a href="Select.html">Neste</a>
+			</div>
+
 
 			<hr style="margin-top: 100px">
 			<footer>
