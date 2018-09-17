@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -52,6 +57,11 @@
 			</footer>
 		</div>
 
+
+		<?php
+		$_SESSION["favcolor"] = "yellow";
+		print_r($_SESSION);
+		?>
 	</div>
 
 </body>
