@@ -22,28 +22,26 @@ session_start();
 				<label><input type="radio" id="q11" name="question1" value="Siden vi er gode venner, ville jeg si ja.">Siden vi er
 					gode venner, ville jeg si ja.</label>
 				<Br>
-				<input type="radio" id="q12" name="question1" value="1">Jeg
-				ville sagt nei til den personen siden man kan ikke stole på alle på internett.
+				<label><input type="radio" id="q12" name="question1" value="1">Jeg
+				ville sagt nei til den personen siden man kan ikke stole på alle på internett.</label>
 				<BR>
-				<input type="radio" id="q13" name="question1" value="2">Jeg ville sagt
-				je, men tatt med meg en voksen.
+				<label><input type="radio" id="q13" name="question1" value="2">Jeg ville sagt
+				je, men tatt med meg en voksen.</label>
 
-				<h3>2. Du har kjent en person i flere måneder nå, denne personen spør om å få se bildet av deg. Denne personen er
-					4-5 år eldre enn deg. Ville du sendt vedkommende bilde av deg? </h3>
-				<input type="radio" id="q21" name="question2" value="1">Nei, aldri!
+				<h3>2. Du har kjent en pers<label><input type="radio" id="q21" name="question2" value="1">Nei, aldri!</label>
 				<BR>
-				<input type="radio" id="q22" name="question2" value="2">Ja, vi har
-				kjent hverandre lenger så hvorfor ikke?
+				<label><input type="radio" id="q22" name="question2" value="2">Ja, vi har
+				kjent hverandre lenger så hvorfor ikke?</label>
 				<BR>
-				<input type="radio" id="q23" name="question2" value="3">Jeg
-				hadde sendt bilde av noen andre og latet som at det er meg.
+				<label><input type="radio" id="q23" name="question2" value="3">Jeg
+				hadde sendt bilde av noen andre og latet som at det er meg.</label>
 
 				<h3>3. Should it be allowed to design and distribute Freemium* online games for kids?</h3>
-				<input type="radio" id="q31" name="question3" value="1">Ja,
-				i det minste så er gratis og uansett så burde barn lære seg å kontrollere ønskene sine
+				<label><input type="radio" id="q31" name="question3" value="1">Ja,
+				i det minste så er gratis og uansett så burde barn lære seg å kontrollere ønskene sine</label>
 				<BR>
-				<input type="radio" id="q32" name="question3" value="2">Nei,
-				barn burde ikke bli fristet av dyrt elektronisk innhold, som ikke har noen virkelig verdi.
+				<label><input type="radio" id="q32" name="question3" value="2">Nei,
+				barn burde ikke bli fristet av dyrt elektronisk innhold, som ikke har noen virkelig verdi.</label>
 			</div>
 
 			<div id="button">
