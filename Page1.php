@@ -15,7 +15,7 @@ session_start();
 <body>
 	<div class="container">
 		<div id="quiz">
-		<form action="Start2.php" method="post" id="quiz">
+		<form action="Page2.php" method="post" id="quiz">
 
 			<h1>Online/Offline</h1>
 			<div class="question">
@@ -47,7 +47,7 @@ session_start();
 				<input type="radio" id="q32" name="question3" value="2">Nei,
 				barn burde ikke bli fristet av dyrt elektronisk innhold, som ikke har noen virkelig verdi.
 			</div>
-			<input type="submit" id="submit" name="test" value="submit">
+			<input type="submit" id="next" name="next" value="next">
 			</form>
 
 			<hr style="margin-top: 100px">
