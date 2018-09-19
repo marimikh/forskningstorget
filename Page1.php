@@ -9,6 +9,19 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<script type="text/javascript">
+		 function check_country()
+            {
+				var radios = document.getElementsByTagName('question1');
+                if(!OK)
+                {
+                    document.getElementById("feilSted").innerHTML="Country does not exist!";
+                    return false;
+                }
+                document.getElementById("feilSted").innerHTML="";
+                return true;
+            }
+	</script>
 	<title>Online/offline</title>
 </head>
 
@@ -21,7 +34,7 @@ session_start();
 			<div class="question">
 				<h3>1. Forestill deg at du har en god venn på internett som vil møte deg i virkeligheten. Han/hun maser veldig mye
 					på deg slik at du skal møte vedkommende. Hva hadde du gjort i dette tilfellet?</h3>
-				<label><input type="radio" id="q11" name="question1" value="1">Siden vi er
+				<label><input type="radio" id="q11" name="question1" value="1" required>Siden vi er
 					gode venner, ville jeg si ja.</label>
 				<Br>
 				<input type="radio" id="q12" name="question1" value="2">Jeg
@@ -32,7 +45,7 @@ session_start();
 
 				<h3>2. Du har kjent en person i flere måneder nå, denne personen spør om å få se bildet av deg. Denne personen er
 					4-5 år eldre enn deg. Ville du sendt vedkommende bilde av deg? </h3>
-				<input type="radio" id="q21" name="question2" value="1">Nei, aldri!
+				<input type="radio" id="q21" name="question2" value="1" required>Nei, aldri!
 				<BR>
 				<input type="radio" id="q22" name="question2" value="2">Ja, vi har
 				kjent hverandre lenger så hvorfor ikke?
@@ -41,12 +54,13 @@ session_start();
 				hadde sendt bilde av noen andre og latet som at det er meg.
 
 				<h3>3. Should it be allowed to design and distribute Freemium* online games for kids?</h3>
-				<input type="radio" id="q31" name="question3" value="1">Ja,
+				<input type="radio" id="q31" name="question3" value="1" required>Ja,
 				i det minste så er gratis og uansett så burde barn lære seg å kontrollere ønskene sine
 				<BR>
 				<input type="radio" id="q32" name="question3" value="2">Nei,
 				barn burde ikke bli fristet av dyrt elektronisk innhold, som ikke har noen virkelig verdi.
 			</div>
+			<br>
 			<input type="submit" id="next" name="next" value="next">
 			</form>
 

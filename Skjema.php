@@ -5,16 +5,18 @@ include ('db.php')?>
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<link rel="stylesheet" type="text/css" href="skjStyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Skjema</title>
 </head>
 
 <body>
-	<form action="Page1.php" method="post" id="skjema">
-	<header>
+<header>
+	<div class="container_a">
+	<form action="Page1.php" method="post" id="skjema" >
 		<h1>Velg ... </h1>
 		<p>1. Hva er din alder?<br>
-			<select name="age">
+			<select name="age" class="form-control" required>
 				<?php
 					for ($i=1; $i<=100; $i++)
 					{
@@ -26,7 +28,7 @@ include ('db.php')?>
 				</select>
 
 		<p>2. Velg ditt kjønn<br>
-			<select name="gender">
+			<select name="gender" class="form-control" required>
 				<option value="female">Jente</option>
 				<option value="male">Gutt</option>
 				<option value="other">Annet</option>
@@ -34,7 +36,7 @@ include ('db.php')?>
 		</p>
 
 		<p>3. Din yrke<br>
-			<select name="occupation">
+			<select name="occupation" class="form-control" required>
 				<option value="1">Barn, skole og undervisning</option>
 				<option value="2">Butikk og varehandel</option>
 				<option value="3">Bygg og anlegg</option>
@@ -53,8 +55,9 @@ include ('db.php')?>
 				<option value="16">Annet</option>
 			</select>
 		</p>
-		<input type="submit" id="submit" name="submit" value="submit">
+		<input type="submit" id="submit" name="submit" value="To the Quiz!">
 	</form>
+		</div>
 
 	<?php
 if (isset($_POST['submit'])) {    
