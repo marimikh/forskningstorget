@@ -11,7 +11,7 @@ $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['questio
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<link rel="stylesheet" type="text/css" href="etkstyle.css">
 	<title>Online/offline</title>
 </head>
 

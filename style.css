@@ -22,7 +22,8 @@ header{
 	padding: 10px 50px 50px 50px;
 	border-radius: 50px;
 	border: 2px #eeeeee;
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 4px 4px 4px 
+    ;
 }
 
 #frontpage{
