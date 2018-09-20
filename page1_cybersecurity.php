@@ -15,7 +15,7 @@ session_start();
 <header>
 	<div class="container">
 		<div id="quiz">
-		<form action="page2_mobbing.php" method="post" id="quiz">
+		<form action="Page2_mobbing.php" method="post" id="quiz">
 
 			<h1>Cybersecurity/Comment</h1>
 			
