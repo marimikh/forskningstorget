@@ -2,7 +2,6 @@
 session_start();
 if (isset($_POST['next'])) {
 $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3']+$_POST['question4'];
-$score1=$_SESSION['score'];
 }
 ?>
 <!DOCTYPE html>
@@ -16,11 +15,11 @@ $score1=$_SESSION['score'];
 <header>
 	<div class="container">
 		<div id="quiz">
-		<form action="Page3_privacy.php" method="post" id="quiz">
+		<form action="page3_privacy.php" method="post" id="quiz">
 
 			<h1>Etikk</h1>
 			<div class="question">
-			<h3><?php echo $score1;?></h3>
+			<h3><?php echo $_SESSION['score'];?></h3>
 				<h3>1. Forestill deg at en som blir mobbet på skolen kommer til deg og spør om de kan være sammen med deg. Hvis du blir venn med denne personen kan alle komme til å le av deg og begynne å mobbe deg også. Hva ville du gjort? </h3>
 					<label><input type="radio" id="mc" name="question1" value="1" required> Jeg ville oversett personen og gått bort.</label>
 					<br>
@@ -52,8 +51,6 @@ $score1=$_SESSION['score'];
 			
 			<input type="submit" id="next" name="next" value="next">
 			</form>
-
-
 			<hr style="margin-top: 3em">
 		</div>	 
 	</div>

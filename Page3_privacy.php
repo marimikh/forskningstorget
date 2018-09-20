@@ -9,13 +9,13 @@ $_SESSION['score2'] = $_SESSION['score'] + $_POST['question1'] + $_POST['questio
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./style_p2.css">
-	<title>Etikk</title>
+	<title>Privacy</title>
 </head>
 <body>
 <header>
 	<div class="container">
 		<div id="quiz">
-		<form action="Page4.php" method="post" id="quiz">
+		<form action="resultat.php" method="post" id="quiz">
 
 			<h1>Privacy</h1>
 			<div class="question">
