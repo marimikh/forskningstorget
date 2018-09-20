@@ -58,6 +58,10 @@ $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['questio
 			<input type="submit" id="next" name="next" value="next">
 			</form>
 			<hr style="margin-top: 3em">
+			<footer>
+				<br>
+				<p id="progress">Spørsmål 6 av 9</p>
+			</footer>
 		</div>	 
 	</div>
 </header>
