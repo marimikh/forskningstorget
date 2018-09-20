@@ -1,5 +1,5 @@
 <?php 
-include ('config.php')?>
+include ('db.php')?>
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +14,7 @@ include ('config.php')?>
 <header>
 	<div class="container_a">
 	<form action="page1_cybersecurity.php" method="post" id="skjema" >
-		<h1>Velg ... </h1>
+		<h1>Litt informasjon om deg</h1>
 		<p>1. Hva er din alder?<br>
 			<select name="age" class="form-control" required>
 			<option value="default">-</option>
@@ -43,6 +43,9 @@ include ('config.php')?>
 				<option value="1">Elev</option>
 			</select>
 		</p>
+
+		<p><i>Oppsamlet informasjon er anonym og kun for dette forskningsprosjektets formål og vil ikke bli overført til noen tredjepart.</i></p>
+
 		<input type="submit" id="submit" name="submit" value="Til Quiz!">
 	</form>
 		</div>

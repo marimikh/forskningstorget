@@ -21,6 +21,7 @@ session_start();
 			
 			<div class="question">
 				<h3>1. Her ser du en mail, som sier at dersom du trykker på linken under så vil du tjene gratis penger. Ville du trykket på linken under for å tjene gratis penger? </h3>
+				<br>
 				<img id="innerPic" src="img/mail.jpg">
 				<label><input type="radio" id="q11" name="question1" value="2" required> Nei, siden jeg vet ikke hvem det er fra. Og det kan være fake email for å hacke meg.</label>
 				<br>
