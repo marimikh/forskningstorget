@@ -1,6 +1,8 @@
-<?php 
+<?php
 session_start();
+if (isset($_POST['next'])) {
 $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3'];
+}
 ?>
 
 
