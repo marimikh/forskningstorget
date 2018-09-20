@@ -3,7 +3,7 @@
 $server="localhost";
 $user="root";
 $database="forskning";
-$password="";
+$password="illievski";
 
 $db = mysqli_connect($server, $user, $password, $database);
 if (!$db) {
