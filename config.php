@@ -1,8 +1,8 @@
 <?php
 
-$server="student.cs.hioa.no";
-$user="s315699";
-$database="s315699";
+$server="localhost";
+$user="root"
+$database="forskning";
 $password="";
 
 $db = mysqli_connect($server, $user, $password, $database);
