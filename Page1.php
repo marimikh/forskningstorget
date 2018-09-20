@@ -26,23 +26,30 @@ session_start();
 				<br>
 				<label><input type="radio" id="q13" name="question1" value="1" required> Jeg ville trykket på linken for å se hvordan man kan få gratis penger. </label>
 
-				<h3>2. Are these good ideas for passwords: 
-					123456, password, 12345, qwerty, baseball, dragon, monkey, letmein, abc123, batman, trustno1? </h3>
-				<label><input type="radio" id="q21" name="question2" value="1" required> Yes, they are easy to remember and some of them are very ironic and  smart</label>
+				<h3>2. Er dette gode passord du kunne brukt på dine kontoer? 123456, passord, 12345, qwerty, dragon, monkey, letmein, abc123, batman, trustno1?</h3>
+				<label><input type="radio" id="q21" name="question2" value="1" required> Ja, de er enkle å huske og noen av dem er morsomme og smarte</label>
 				<br>
-				<label><input type="radio" id="q22" name="question2" value="2"> No, these passwords are very easy to guess. Your will be hacked in no time!</label>
+				<label><input type="radio" id="q22" name="question2" value="2"> Nei, disse passordene er for enkle å gjette</label>
 
-				<h3>3. You are about to join a new website that your friends at school say is really cool. At the registration you are asked to provide your home address/credit card number/ home phone number. What would you do in this situation?</h3>
-				<label><input type="radio" id="q31" name="question3" value="1" required> I will provide all the information. My friends did, so it must be safe </label>
+				<h3>3. Du har tenkt til å bli medlem av en ny nettside som alle på skolen sier er kul. På registrerings siden ber de deg om å skrive inn adressen din, kortnummeret ditt og telefonnummeret ditt. Hva ville du gjort?</h3>
+				<label><input type="radio" id="q31" name="question3" value="1" required> Jeg skriver inn informasjonen. Vennene mine har jo gjort det så det er nok trygt. </label>
 				<br>
-				<label><input type="radio" id="q32" name="question3" value="2"> It seems like it might be dangerous to provide such information. I think it would be better to ask my parents about it</label>
+				<label><input type="radio" id="q32" name="question3" value="2"> Det virker litt skummelt å skrive inn all den informasjonen så jeg spør foreldrene mine om det først</label>
+
+				<h3>4. Vennen din tilbød deg passordet og brukernavnet sitt, til en trygg nettside som dere begge bruker. Hva ville du gjort?</h3>
+				<label><input type="radio" id="q41" name="question4" value="2" required> Jeg holder det hemmelig og vil ikke bruke det til å logge inn uten lov av vennen min.</label>
+				<br>
+				<label><input type="radio" id="q42" name="question4" value="1" required> Jeg kan kanskje dele det med noen venner så vi kan tulle litt med vennen som ga meg passordet sitt</label>
+				<br>
+				<label><input type="radio" id="q43" name="question4" value="3" required> Jeg vil ikke ta det imot og jeg ville sakt ifra til noen om at vennen min deler ut passordet og brukernavnet sitt.</label>
 			</div>
 			<br>
 			<input type="submit" id="next" name="next" value="next">
 			</form>
 
-			<hr style="margin-top: 100px">
+			<hr style="margin-top: 45px">
 			<footer>
+				<br>
 				<p id="progress">Spørsmål 3 av 9</p>
 			</footer>
 		</div>

@@ -1,9 +1,9 @@
 <?php 
 session_start();
 if (isset($_POST['next'])) {
-$_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3'];
+$_SESSION['score2'] = $_SESSION['score'] + $_POST['question1'] + $_POST['question2'] + $_POST['question3'];
 }?>
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,31 +17,40 @@ $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['questio
 		<div id="quiz">
 		<form action="Page4.php" method="post" id="quiz">
 
-			<h1>Etikk</h1>
+			<h1>Privacy</h1>
 			<div class="question">
-				<h3>1. Du går på en fest/bursdag eller lignende som du ikke har lov til å gå på av foreldrene dine. Etter den festen er over ser du at folk har lagt ut bilder og tagget deg i bilder du også er med på. Disse bildene kan foreldrene dine også se. Hva ville du gjort i dette tilfellet? </h3>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde fjernet tagg fra bilder jeg er tagget i. Også hadde jeg sendt melding til folk om å slette bilder jeg er med på."> Jeg hadde fjernet tagg fra bilder jeg er tagget i. Også hadde jeg sendt melding til folk om å slette bilder jeg er med på.  
-					<Br>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde bare krysset fingrene og håpet på at mamma, pappa ikke så bildene."> Jeg hadde bare krysset fingrene og håpet på at mamma, pappa ikke så bildene. 
-					<BR>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde gått til foreldrene mine og sagt sannheten, og beklaget veldig mye for at jeg dro uten deres tillatelse."> Jeg hadde gått til foreldrene mine og sagt sannheten, og beklaget veldig mye for at jeg dro uten deres tillatelse. 
+			<h3><?php echo $_SESSION['score2'];?></h3>
+				<h3>1. Når man skal dele et bilde på internett. Trenger man å spørre om lov av personene på bildet man deler?</h3>
+					<label><input type="radio" id="11" name="question1" value="3" required> 
+						Ja, kanskje de ikke liker å dele bilder av seg selv på nettet så jeg bør spørre om det er greit.</label>
+					<br>
+					<label><input type="radio" id="12" name="question1" value="1"> 
+						Nei, hvis jeg vet at personen allerede deler bilder av dem selv på nettet så har de sikkert ikke noe problem med at jeg deler dem også. </label> 
+					<br>
+					<label><input type="radio" id="13" name="question1" value="2"> 
+						Hvis personen bare er i bakgrunnen av bildet så trenger jeg ikke spørre men hvis bildet bare er av denne personen så bør jeg spørre.</label>
 
-				<h3>2. Synes du at det er greit å legge ut følgende bilde av barnet eller søskenet ditt på sosiale medier.</h3>
-					<img id="innerPic" src="img/barn.jpg">
-					<input type="radio" id="mc" name="question2" value="Ja, jeg ser ingen problemer med å bruke bilde. Det er en uskyldig, søt og morsomt bilde."> Ja, jeg ser ingen problemer med å bruke bilde. Det er en uskyldig, søt og morsomt bilde. 
-					<BR>
-					<input type="radio" id="mc" name="question2" value="Nei, jeg tror mitt søsken/barn vil anse det som et flaut bildet senere."> Nei, jeg tror mitt søsken/barn vil anse det som et flaut bildet senere.
-					<BR>
+				<h3>2. Tanten din er på besøk og vil å legge ut bilde av deg og sine barn sammen. 
+				Du vil ikke bli tatt bilde av og vil ikke at det skal bli lagt ut på internett. Hva hadde du gjort?</h3>
+				<label><input type="radio" id="21" name="question2" value="3" required> 
+					Jeg ville ha vært ærlig og sagt ifra om at jeg ikke vil bli tatt bilde av</label>
+					<br>
+					<label><input type="radio" id="22" name="question2" value="1"> Jeg hadde ikke tørt å si ifra </label> 
+					<br>
+					<label><input type="radio" id="23" name="question2" value="1"> 
+						Jeg ville ha gjemt meg bak de andre barna, så jeg ble mindre synlig på bildet</label>
 
-				<h3>3. Når du skal legge ut bilder av en person, bør du be om tilatelse først?</h3>
-					<input type="radio" id="mc" name="question3" value="Ja, det kan hende vedkommende ikke ønsker at du skal legge ut bilder av han/hun."> Ja, det kan hende vedkommende ikke ønsker at du skal legge ut bilder av han/hun.
-					<BR>
-					<input type="radio" id="mc" name="question3" value="Nei. Hvis vedkommende legger selv ut bilder av seg selv, så bør det være greit at andre også legger ut av han/henne."> Nei. Hvis vedkommende legger selv ut bilder av seg selv, så bør det være greit at andre også legger ut av han/henne.
-					<BR>
+				<h3>3. Du har nettopp sett en video på nettet som var veldig voldelig og du syntes at det var ganske ekkelt. Hva gjør du? </h3>
+				<label><input type="radio" id="22" name="question3" value="1" required> Jeg sender den videre til en venn. Hvis de ser den også kan vi diskutere den etterpå og kanskje de synes det er kult. </label> 
+				<br>
+				<label><input type="radio" id="23" name="question3" value="2"> Lukker siden og later som at du ikke så videoen.</label>
+				<br>
+				<label><input type="radio" id="23" name="question3" value="3"> Sier ifra til noen du stoler på som foreldre eller en lærer.</label>
+
 
 			</div>
 			
-			<input type="submit" id="next" name="next" value="next">
+			<input type="submit" id="next" name="finish" value="Finish">
 			</form>
 
 

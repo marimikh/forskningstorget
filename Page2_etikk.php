@@ -1,7 +1,8 @@
 <?php
 session_start();
 if (isset($_POST['next'])) {
-$_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3'];
+$_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['question3']+$_POST['question4'];
+$score1=$_SESSION['score'];
 }
 ?>
 <!DOCTYPE html>
@@ -19,25 +20,33 @@ $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['questio
 
 			<h1>Etikk</h1>
 			<div class="question">
-				<h3>1. Du går på en fest/bursdag eller lignende som du ikke har lov til å gå på av foreldrene dine. Etter den festen er over ser du at folk har lagt ut bilder og tagget deg i bilder du også er med på. Disse bildene kan foreldrene dine også se. Hva ville du gjort i dette tilfellet? </h3>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde fjernet tagg fra bilder jeg er tagget i. Også hadde jeg sendt melding til folk om å slette bilder jeg er med på."> Jeg hadde fjernet tagg fra bilder jeg er tagget i. Også hadde jeg sendt melding til folk om å slette bilder jeg er med på.  
-					<Br>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde bare krysset fingrene og håpet på at mamma, pappa ikke så bildene."> Jeg hadde bare krysset fingrene og håpet på at mamma, pappa ikke så bildene. 
-					<BR>
-					<input type="radio" id="mc" name="question1" value="Jeg hadde gått til foreldrene mine og sagt sannheten, og beklaget veldig mye for at jeg dro uten deres tillatelse."> Jeg hadde gått til foreldrene mine og sagt sannheten, og beklaget veldig mye for at jeg dro uten deres tillatelse. 
+			<h3><?php echo $score1;?></h3>
+				<h3>1. Forestill deg at en som blir mobbet på skolen kommer til deg og spør om de kan være sammen med deg. Hvis du blir venn med denne personen kan alle komme til å le av deg og begynne å mobbe deg også. Hva ville du gjort? </h3>
+					<label><input type="radio" id="mc" name="question1" value="1" required> Jeg ville oversett personen og gått bort.</label>
+					<br>
+					<label><input type="radio" id="mc" name="question1" value="3" required> Jeg ville si ja. Jeg bryr meg ikke om hva andre kommer til å si.</label> 
+					<br>
+					<label><input type="radio" id="mc" name="question1" value="1" required> Aldri om jeg vil bli venn med en som blir mobbet</label> 
 
-				<h3>2. Synes du at det er greit å legge ut følgende bilde av barnet eller søskenet ditt på sosiale medier.</h3>
-					<img id="innerPic" src="img/barn.jpg">
-					<input type="radio" id="mc" name="question2" value="Ja, jeg ser ingen problemer med å bruke bilde. Det er en uskyldig, søt og morsomt bilde."> Ja, jeg ser ingen problemer med å bruke bilde. Det er en uskyldig, søt og morsomt bilde. 
-					<BR>
-					<input type="radio" id="mc" name="question2" value="Nei, jeg tror mitt søsken/barn vil anse det som et flaut bildet senere."> Nei, jeg tror mitt søsken/barn vil anse det som et flaut bildet senere.
-					<BR>
+				<h3>2. Hva hadde du gjort når du ser at noen er slemme mot deg eller andre på nettet?</h3>
+				<br>
+					<img id="innerPic" src="img/msp.jpg">
+					<label><input type="radio" id="mc" name="question2" value="3" required> Jeg hadde rapportert det og blokkert henne</label>
+					<br>
+					<label><input type="radio" id="mc" name="question2" value="1" required> Jeg hadde kranglet tilbake</label> 
+					<br>
+					<label><input type="radio" id="mc" name="question2" value="2" required> Jeg hadde oversett henne</label> 
 
-				<h3>3. Når du skal legge ut bilder av en person, bør du be om tilatelse først?</h3>
-					<input type="radio" id="mc" name="question3" value="Ja, det kan hende vedkommende ikke ønsker at du skal legge ut bilder av han/hun."> Ja, det kan hende vedkommende ikke ønsker at du skal legge ut bilder av han/hun.
-					<BR>
-					<input type="radio" id="mc" name="question3" value="Nei. Hvis vedkommende legger selv ut bilder av seg selv, så bør det være greit at andre også legger ut av han/henne."> Nei. Hvis vedkommende legger selv ut bilder av seg selv, så bør det være greit at andre også legger ut av han/henne.
-					<BR>
+				<h3>3. Noen du kjenner har delt dette bildet av seg selv på facebook:</h3>
+					<br>
+					<img id="innerPic" src="img/mob.jpg">
+					<h3>Og noen har skrevet denne kommentaren til dem: </h3>
+					<br>
+					<img id="innerPic" src="img/mob2.jpg">
+					<h3>Ville du tenkt på denne kommentaren som mobbing på nettet?</h3>
+					<label><input type="radio" id="mc" name="question3" value="1" required> Nei, denne personen prøver bare å hjelpe den andre personen å se bedre ut.</label>
+					<br>
+					<label><input type="radio" id="mc" name="question3" value="3" required> Ja, denne kommentaren er ikke hyggelig.</label> 
 
 			</div>
 			

@@ -15,14 +15,14 @@ header{
     background-repeat: no-repeat;
 	background-position: center;
 	padding-top: 20px;
-	min-height: 60px;
-	padding: 3em;
+	padding: 1em;
 }
 
 .container{
 	width: 700px;
 	margin: 0 auto;
 	margin-bottom: 5em;
+	margin-top: 5em;
 	background-color: #88c6fa;
 	padding: 10px 50px 50px 50px;
 	border-radius: 50px;
@@ -32,11 +32,12 @@ header{
 
 .container h1 {
 	background-color: white;
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
 	color: black;
 	padding: 2px 0px;
 	border-radius: 50px;
+	margin-top: 15px;
 }
 
 .question h3 {
@@ -74,6 +75,7 @@ input #V{
     color: #fff;
     font-weight: bold;
 }
+
 a{
     padding: 10px;
     text-transform: uppercase;
