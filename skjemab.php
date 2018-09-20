@@ -13,7 +13,7 @@ include ('db.php')?>
 <body>
 <header>
 	<div class="container_a">
-	<form action="page1_cybersecurity.php" method="post" id="skjema" >
+	<form action="page1_cs.php" method="post" id="skjema" >
 		<h1>Velg ... </h1>
 		<p>1. Hva er din alder?<br>
 			<select name="age" class="form-control" required>
@@ -31,8 +31,8 @@ include ('db.php')?>
 		<p>2. Velg ditt kjønn<br>
 			<select name="gender" class="form-control" required>
 				<option value="default">-</option>
-				<option value="female">Jente</option>
-				<option value="male">Gutt</option>
+				<option value="female">Kvinne</option>
+				<option value="male">Mann</option>
 				<option value="other">Annet</option>
 			</select>
 		</p>
@@ -52,13 +52,13 @@ include ('db.php')?>
 				<option value="10">Offentlig administrasjon</option>
 				<option value="11">Olje og gass</option>
 				<option value="12">Restaurant, mat og uteliv</option>
-				<option value="13">Student</option>
+				<option value="13">Student/Elev</option>
 				<option value="14">Transport og logistikk</option>
 				<option value="15">Økonomi og regnskap </option>
 				<option value="16">Annet</option>
 			</select>
 		</p>
-		<input type="submit" id="submit" name="submit" value="To the Quiz!">
+		<input type="submit" id="submit" name="submit" value="Til Quiz!">
 	</form>
 		</div>
 

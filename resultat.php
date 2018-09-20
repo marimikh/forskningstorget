@@ -15,7 +15,6 @@ $_SESSION['score_final'] = $_SESSION['score2']+ $_POST['question1'] + $_POST['qu
 	<div class="container">
 	<?php 
 	if (isset($_POST['finish'])){
-    echo $_SESSION['score_final'];
         if ($_SESSION['score_final']<12) {
 			echo "<i>Du ble den uforsiktige apekatten. Det er ikke alltid bra å forhaste ting, 
 			tenk gjerne en gang eller to, før du legger noe ut på internett. Husk at det er fort gjort 

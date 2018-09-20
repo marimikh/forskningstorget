@@ -19,7 +19,7 @@ include ('db.php')?>
 			<select name="age" class="form-control" required>
 			<option value="default">-</option>
 				<?php
-					for ($i=5; $i<=100; $i++)
+					for ($i=5; $i<=16; $i++)
 					{
 						?>
 							<option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -40,25 +40,10 @@ include ('db.php')?>
 		<p>3. Din yrke<br>
 			<select name="occupation" class="form-control" required>
 				<option value="default">-</option>
-				<option value="1">Barn, skole og undervisning</option>
-				<option value="2">Butikk og varehandel</option>
-				<option value="3">Bygg og anlegg</option>
-				<option value="4">Forskning, utdanning og vitenskap</option>
-				<option value="5">Helse og omsorg</option>
-				<option value="6">Hotell og overnatting</option>
-				<option value="7">Industri og produksjon</option>
-				<option value="8">Konsulent og rådgivning</option>
-				<option value="9">Matvareproduksjon og -industri</option>
-				<option value="10">Offentlig administrasjon</option>
-				<option value="11">Olje og gass</option>
-				<option value="12">Restaurant, mat og uteliv</option>
-				<option value="13">Student</option>
-				<option value="14">Transport og logistikk</option>
-				<option value="15">Økonomi og regnskap </option>
-				<option value="16">Annet</option>
+				<option value="1">Elev</option>
 			</select>
 		</p>
-		<input type="submit" id="submit" name="submit" value="To the Quiz!">
+		<input type="submit" id="submit" name="submit" value="Til Quiz!">
 	</form>
 		</div>
 

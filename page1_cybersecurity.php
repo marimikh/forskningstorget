@@ -15,7 +15,7 @@ session_start();
 <header>
 	<div class="container">
 		<div id="quiz">
-		<form action="page2_etikk.php" method="post" id="quiz">
+		<form action="page2_mobbing.php" method="post" id="quiz">
 
 			<h1>Cybersecurity</h1>
 			<div class="question">
@@ -50,7 +50,7 @@ session_start();
 			<hr style="margin-top: 45px">
 			<footer>
 				<br>
-				<p id="progress">Spørsmål 3 av 9</p>
+				<p id="progress">Spørsmål 4 av 10</p>
 			</footer>
 		</div>
 	</div>

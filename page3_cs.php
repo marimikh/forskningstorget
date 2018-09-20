@@ -19,7 +19,6 @@ $_SESSION['score2'] = $_SESSION['score'] + $_POST['question1'] + $_POST['questio
 
 			<h1>Cybersecurity III</h1>
 			<div class="question">
-			<h3><?php echo $_SESSION['score2'];?></h3>
 				<h3>7. En login krever både brukernavn, passord og et steg til, feks bruk av en telefon eller en slags dobbelsjekk mot en annen enhet som er 
                     opprettet tidligere og lagt inn som en “trusted unit”. Hva kalles dette ekstra steget?</h3>
 					<label><input type="radio" id="71" name="question1" value="3" required> 

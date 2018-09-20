@@ -19,7 +19,6 @@ $_SESSION['score'] = $_POST['question1'] + $_POST['question2'] + $_POST['questio
 
 			<h1>Cybersecurity II</h1>
 			<div class="question">
-			<h3><?php echo $_SESSION['score'];?></h3>
 				<h3>4. Hvordan kan du identifisere om en nettside eller en link er sikker å trykke på?</h3>
 					<label><input type="radio" id="41" name="question1" value="2" required> Nettsiden har https og ikke bare http i adressefeltet.</label>
 					<br>
