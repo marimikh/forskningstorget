@@ -1,7 +1,7 @@
 <?php
 
 $server="localhost";
-$user="root"
+$user="ubuntu";
 $database="forskning";
 $password="";
 
