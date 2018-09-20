@@ -19,7 +19,7 @@ include ('db.php')?>
 			<select name="age" class="form-control" required>
 			<option value="default">-</option>
 				<?php
-					for ($i=5; $i<=100; $i++)
+					for ($i=16; $i<=100; $i++)
 					{
 						?>
 							<option value="<?php echo $i;?>"><?php echo $i;?></option>
