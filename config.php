@@ -1,11 +1,10 @@
+
 <?php
+$con = mysqli_connect("localhost","torget","illievski","forskning");
 
-$server="localhost";
-$user="root";
-$database="forskning";
-$password="illievski";
-
-$db = mysqli_connect($server, $user, $password, $database);
-if (!$db) {
-    die("Can't connect to DB" . mysqli_error($db));
-} ?>
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+?>
