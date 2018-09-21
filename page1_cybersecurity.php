@@ -17,7 +17,7 @@ session_start();
 		<div id="quiz">
 		<form action="Page2_mobbing.php" method="post" id="quiz">
 
-			<h1>Cybersecurity/Comment</h1>
+			<h1>Cybersecurity</h1>
 			
 			<div class="question">
 				<h3>1. Her ser du en mail, som sier at dersom du trykker på linken under så vil du tjene gratis penger. Ville du trykket på linken under for å tjene gratis penger? </h3>
