@@ -1,5 +1,4 @@
-<?php 
-include ('config.php')?>
+
 <!DOCTYPE html>
 <html>
 
@@ -49,19 +48,5 @@ include ('config.php')?>
 		<input type="submit" id="submit" name="submit" value="Til Quiz!">
 	</form>
 		</div>
-
-	<?php
-if (isset($_POST['submit'])) {    
-	  $age = $_POST["age"];
-	  $gender = $_POST["gender"];
-	  $occupation = $_POST["occupation"];      
-      $sql = "INSERT INTO respondent SET age='".$age."', gender='".$gender."', occupation='".$occupation."'";
-         
-    $submit_update = mysqli_query($db, $sql);
-
-    if (!$submit_update) {
-        echo "</br> Houston, we have a problem";
-    } 
-}?>
 </body>
 </html>
