@@ -16,7 +16,7 @@ include ('config.php')?>
 	<form action="page1_cs.php" method="post" id="skjema" >
 		<h1>Litt informasjon om deg</h1>
 		<p>1. Hva er din alder?<br>
-			<select name="age" class="form-control" required>
+			<select name="age" required>
 			<option value="default">-</option>
 				<?php
 					for ($i=16; $i<=100; $i++)
@@ -29,7 +29,7 @@ include ('config.php')?>
 				</select>
 
 		<p>2. Velg ditt kjønn<br>
-			<select name="gender" class="form-control" required>
+			<select name="gender" required>
 				<option value="default">-</option>
 				<option value="female">Kvinne</option>
 				<option value="male">Mann</option>
@@ -38,7 +38,7 @@ include ('config.php')?>
 		</p>
 
 		<p>3. Din yrke<br>
-			<select name="occupation" class="form-control" required>
+			<select name="occupation"  required>
 				<option value="default">-</option>
 				<option value="1">Barn, skole og undervisning</option>
 				<option value="2">Butikk og varehandel</option>

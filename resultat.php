@@ -22,7 +22,7 @@ $_SESSION['score_final'] = $_SESSION['score2']+ $_POST['question1'] + $_POST['qu
 			å komme borti upassende innhold eller ubehagelige personer. Vær smart når du bruker internett.</i>";
             echo "<img id='innerImg' src='img/monkey.jpg'/>";
         }
-        elseif($_SESSION['score_final']>=12 && $_SESSION['score_final']<16){
+        elseif($_SESSION['score_final']>=12 && $_SESSION['score_final']<20){
 			echo "<h1>Du ble den forsiktige<br> koala bjørnen</h1> 
 			<br><i>Det er ikke alltid du 
 			vet hva som er rett og galt og det hender at du ofte setter deg i skyggen.
