@@ -13,6 +13,31 @@ session_start();
 </head>
 <body>
 <header>
+
+<?php
+        $servername = "localhost";
+        $username = "torget";
+        $password = "illievski";
+        $dbname = "forskning";
+        
+        $age = $_POST["age"];
+        $gender = $_POST["gender"];
+        $occupation = $_POST["occupation"];
+        try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $sql = "INSERT INTO respondent (age, gender, occupation)
+                VALUES ('$age', '$gender', '$occupation')";
+                $conn->exec($sql);
+                echo "New record created successfully";
+                }
+        catch(PDOException $e)
+                {
+                echo $sql . "<br>" . $e->getMessage();
+                }
+        $conn = null;
+?>]
+
 	<div class="container">
 		<div id="quiz">
 		<form action="page2_cs.php" method="post" id="quiz">
